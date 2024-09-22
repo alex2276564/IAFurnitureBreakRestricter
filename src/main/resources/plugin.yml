@@ -1,0 +1,9 @@
+name: IAFurnitureBreakRestricter
+version: '${version}'
+description: "This is plugin can restrict break furniture from ItemsAdder plugin. Use permission ia.furniture.break to allow this action."
+author: alex2276564
+website: https://github.com/alex2276564/IAFurnitureBreakRestricter
+main: uz.alex2276564.iafurniturebreakrestricter.IAFurnitureBreakRestricter
+api-version: '1.16'
+depend:
+  - ItemsAdder
