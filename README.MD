@@ -10,7 +10,7 @@
 ## ✨ Features
 
 - ✅ **Furniture Protection:** Prevents unauthorized players from breaking ItemsAdder furniture.
-- ✅ **Flexible Permission System:**  Grants permission to break furniture with either the specific `IA.Furniture.Break` permission or the broader `ia.*` permission.
+- ✅ **Flexible Permission System:**  Grants permission to break furniture with either the specific `ia.furniture.break` permission or the broader `ia.*` permission.
 - ✅ **Minigame Friendly:** Ideal for games like BedWars where WorldGuard can't be used.
 
 ## 📥 Installation
