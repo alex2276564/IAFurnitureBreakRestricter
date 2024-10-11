@@ -1,0 +1,15 @@
+# Furniture Protection Plugin Configuration
+
+# This plugin restricts breaking of furniture from the ItemsAdder plugin.
+# Use permission "ia.furniture.break" to allow breaking furniture.
+
+# Message Settings
+message:
+  # This message is sent if someone tries to break furniture without permission.
+  # Leave it blank ("") to disable the message.
+  no_permission: "You don't have the ia.furniture.break permission to break furniture here!"
+
+# Permissions
+permissions:
+  # Permission required to break furniture
+  break: "ia.furniture.break"

@@ -8,7 +8,10 @@ public final class IAFurnitureBreakRestricter extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        registerListeners();
+    }
 
+    private void registerListeners() {
         Bukkit.getPluginManager().registerEvents(new IAFurnitureBreakListener(), this);
     }
 }
