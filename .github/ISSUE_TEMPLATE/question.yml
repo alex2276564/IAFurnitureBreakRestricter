@@ -1,0 +1,31 @@
+name: Question
+description: Ask a question about ItemsAdder Furniture Protection
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for your interest in ItemsAdder Furniture Protection!"
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What would you like to know about the plugin?
+      placeholder: Please be as specific as possible
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Question Category
+      description: What is your question about?
+      options:
+        - "Installation"
+        - "Permissions"
+        - "ItemsAdder Compatibility"
+        - "Minigame Integration"
+        - "Other"
+    validations:
+      required: true
