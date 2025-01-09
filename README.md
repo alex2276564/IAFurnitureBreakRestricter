@@ -10,8 +10,9 @@
 ## ✨ Features
 
 - ✅ **Furniture Protection:** Prevents unauthorized players from breaking ItemsAdder furniture.
-- ✅ **Flexible Permission System:**  Grants permission to break furniture with either the specific `ia.furniture.break` permission or the broader `ia.*` permission.
+- ✅ **Flexible Permission System:** Grants permission to break furniture with either the specific `ia.furniture.break` permission or the broader `ia.*` permission.
 - ✅ **Minigame Friendly:** Ideal for games like BedWars where WorldGuard can't be used.
+- 🔄 **Auto-Update Check:** On server start, the plugin checks for updates. If a new version is available, a notification is displayed in the console.
 
 ## 📥 Installation
 
@@ -28,6 +29,7 @@
 - **Minecraft Versions:** 1.16.5 to the latest release
 - **Server Software:** [Paper](https://papermc.io/) (1.16.5 and newer)
 - **Required Plugins:** [ItemsAdder](https://www.spigotmc.org/resources/itemsadder.73355/)
+- ✅ **Full ItemsAdder Compatibility:** Compatible with all versions of ItemsAdder.
 
 ## 🆘 Support
 
