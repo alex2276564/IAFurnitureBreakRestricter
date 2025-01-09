@@ -5,7 +5,7 @@ on:
   pull_request:
 
 jobs:
-  markdown:
+  lint-markdown:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -15,7 +15,7 @@ jobs:
         with:
           globs: '**/*.md' # Checks all Markdown files in the repository
           fix: true # automatically fixes simple problems
-          config: '../markdownlint.jsonc'  # if you have a configuration file
+          config: '/lint/markdownlint.jsonc'  # if you have a configuration file
 #        continue-on-error: true  # to prevent the build from crashing due to errors in the documentation
 
   build:
