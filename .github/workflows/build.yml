@@ -33,10 +33,10 @@ jobs:
           distribution: 'temurin'
 
       - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v4  # Обновлённая версия
+        uses: gradle/actions/setup-gradle@v4
 
       - name: Build with Gradle
-        run: ./gradlew build  # Вместо deprecated "arguments"
+        run: ./gradlew build
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
