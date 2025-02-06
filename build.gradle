@@ -25,7 +25,7 @@ dependencies {
 
     compileOnly 'com.github.LoneDev6:API-ItemsAdder:3.6.3-beta-14'
 
-    implementation 'com.google.code.gson:gson:2.11.0'
+    implementation 'com.google.code.gson:gson:2.12.1'
 }
 
 def targetJavaVersion = 16
