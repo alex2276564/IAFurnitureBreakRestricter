@@ -1,4 +1,4 @@
-package uz.alex2276564.iafurniturebreakrestricter.task;
+package uz.alex2276564.iafurniturebreakrestricter.runner;
 
 import org.jetbrains.annotations.NotNull;
 
