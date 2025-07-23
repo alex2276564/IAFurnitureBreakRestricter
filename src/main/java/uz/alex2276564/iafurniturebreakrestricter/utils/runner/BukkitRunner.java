@@ -1,4 +1,4 @@
-package uz.alex2276564.iafurniturebreakrestricter.runner;
+package uz.alex2276564.iafurniturebreakrestricter.utils.runner;
 
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitScheduler;

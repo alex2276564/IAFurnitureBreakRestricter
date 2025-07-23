@@ -4,8 +4,8 @@ import lombok.Getter;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import uz.alex2276564.iafurniturebreakrestricter.listeners.IAFurnitureBreakListener;
-import uz.alex2276564.iafurniturebreakrestricter.runner.BukkitRunner;
-import uz.alex2276564.iafurniturebreakrestricter.runner.Runner;
+import uz.alex2276564.iafurniturebreakrestricter.utils.runner.BukkitRunner;
+import uz.alex2276564.iafurniturebreakrestricter.utils.runner.Runner;
 import uz.alex2276564.iafurniturebreakrestricter.utils.UpdateChecker;
 
 public final class IAFurnitureBreakRestricter extends JavaPlugin {
