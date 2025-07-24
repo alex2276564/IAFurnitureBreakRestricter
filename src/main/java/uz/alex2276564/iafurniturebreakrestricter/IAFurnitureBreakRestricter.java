@@ -15,9 +15,17 @@ public final class IAFurnitureBreakRestricter extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        setupRunner();
-        registerListeners();
-        checkUpdates();
+        try {
+            setupRunner();
+            registerListeners();
+            checkUpdates();
+
+            getLogger().info("IAFurnitureBreakRestricter has been enabled successfully!");
+        } catch (Exception e) {
+            getLogger().severe("Failed to enable IAFurnitureBreakRestricter: " + e.getMessage());
+            e.printStackTrace();
+            getServer().getPluginManager().disablePlugin(this);
+        }
     }
 
     private void setupRunner() {
