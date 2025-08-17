@@ -42,6 +42,8 @@ dependencies {
 shadowJar {
     archiveClassifier.set('')
 
+    mergeServiceFiles()
+
     relocate 'com.google.gson', 'uz.alex2276564.permguard.libs.gson'
 }
 
