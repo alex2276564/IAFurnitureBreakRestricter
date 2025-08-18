@@ -117,7 +117,6 @@ jobs:
         uses: gradle/actions/setup-gradle@main
 
       - name: Run Snyk to check for vulnerabilities
-        continue-on-error: true # Don't stop the pipeline because maybe snyk api limit
         uses: snyk/actions/gradle-9-jdk17@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
@@ -126,7 +125,6 @@ jobs:
           args: --severity-threshold=high --sarif-file-output=snyk.sarif
 
       - name: Upload Snyk scan results to GitHub Security tab
-        continue-on-error: true # Don't stop the pipeline because maybe snyk api limit
         # Fix condition to work for both push and PR (excluding forks)
         if: |
           github.event_name == 'push' || 
