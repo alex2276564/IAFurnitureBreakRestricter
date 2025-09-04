@@ -4,7 +4,7 @@ import lombok.Getter;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import uz.alex2276564.iafurniturebreakrestricter.listeners.IAFurnitureBreakListener;
-import uz.alex2276564.iafurniturebreakrestricter.utils.runner.BukkitRunner;
+import uz.alex2276564.iafurniturebreakrestricter.utils.runner.FoliaRunner;
 import uz.alex2276564.iafurniturebreakrestricter.utils.runner.Runner;
 import uz.alex2276564.iafurniturebreakrestricter.utils.UpdateChecker;
 
@@ -29,7 +29,12 @@ public final class IAFurnitureBreakRestricter extends JavaPlugin {
     }
 
     private void setupRunner() {
-        runner = new BukkitRunner(this);
+        runner = new FoliaRunner(this);
+        getLogger().info("Initialized " + runner.getPlatformName() + " scheduler support");
+
+        if (runner.isFolia()) {
+            getLogger().info("Folia detected - using RegionScheduler and EntityScheduler for optimal performance");
+        }
     }
 
     private void registerListeners() {
@@ -43,6 +48,8 @@ public final class IAFurnitureBreakRestricter extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        runner.cancelTasks();
+        if (runner != null) {
+            runner.cancelAllTasks();
+        }
     }
 }
