@@ -4,12 +4,15 @@ import dev.lone.itemsadder.api.Events.FurnitureBreakEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import uz.alex2276564.iafurniturebreakrestricter.events.PlayerIAFurnitureBreakEvent;
 
 public class IAFurnitureBreakListener implements Listener {
 
-    @EventHandler
+    @EventHandler(
+            ignoreCancelled = true
+    )
     public void onIA(FurnitureBreakEvent event) {
         Player player = event.getPlayer();
 
@@ -20,7 +23,10 @@ public class IAFurnitureBreakListener implements Listener {
         }
     }
 
-    @EventHandler
+    @EventHandler(
+            priority = EventPriority.MONITOR,
+            ignoreCancelled = true
+    )
     public void on(PlayerIAFurnitureBreakEvent event) {
         Player player = event.getPlayer();
 
