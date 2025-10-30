@@ -62,7 +62,7 @@ WorldGuard works great for Survival servers, but on **minigame servers**:
     - ✅ [Paper](https://papermc.io/) (1.16.5 and newer) - **Fully Supported**
     - ❌ Folia - ItemsAdder does not support Folia at this time
     - ❌ Spigot - Not supported
-- **Required Plugins:** [ItemsAdder](https://www.spigotmc.org/resources/itemsadder.73355/)
+- **Required Plugins:** [ItemsAdder](https://www.spigotmc.org/resources/%E2%9C%A8itemsadder%E2%AD%90emotes-mobs-items-armors-hud-gui-emojis-blocks-wings-hats-liquids.73355/)
 - ✅ **Works with all ItemsAdder furniture**
 - ✅ **Full ItemsAdder Compatibility:** Compatible with all versions of ItemsAdder.
 
