@@ -26,5 +26,3 @@ ignorePatterns:
   # SpigotMC - blocks automated scrapers
   - pattern: '^https://www\.spigotmc\.org/.*$'
 
-  # Polymart - blocks automated scrapers
-  - pattern: '^https://www\.polymart\.org/.*$'

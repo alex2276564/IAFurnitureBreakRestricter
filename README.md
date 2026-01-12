@@ -74,7 +74,7 @@ This plugin works seamlessly with popular minigame plugins:
 - ✅ **BedWars Plugins:**
   - [BedWars1058](https://www.spigotmc.org/resources/bedwars1058.50942/)
   - [Screaming BedWars](https://www.spigotmc.org/resources/screaming-bedwars-1-8-8-1-20-4.63714/)
-  - [MBedwars](https://polymart.org/resource/mbedwars.2739)
+  - [MBedwars](https://mbedwars.com/)
   - Other BedWars forks and custom implementations
 - ✅ **SkyWars Plugins:** Most SkyWars implementations
 - ✅ **BuildBattle, Murder Mystery, and other minigames**
