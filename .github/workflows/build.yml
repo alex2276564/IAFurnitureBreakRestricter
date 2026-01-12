@@ -159,6 +159,13 @@ jobs:
         with:
           sarif_file: 'trivy-results.sarif'
 
+      - name: Run Trivy (console report)
+        if: failure()
+        run: |
+          echo "==== Trivy console report ===="
+          trivy fs .
+
+
   security-scan-osv-pr:
     name: 🔐 Security Scan OSV (PR)
     if: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.fork == false }}
