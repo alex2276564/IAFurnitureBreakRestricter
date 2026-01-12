@@ -25,6 +25,7 @@
 ### 💡 **Why not just use WorldGuard?**
 
 WorldGuard works great for Survival servers, but on **minigame servers**:
+
 - ❌ Creating regions in every BedWars/SkyWars arena is impractical and causes bugs
 - ❌ Players need to break/place blocks in arenas, but furniture must remain protected
 - ❌ Dynamic game zones make region-based protection unreliable
@@ -37,10 +38,10 @@ WorldGuard works great for Survival servers, but on **minigame servers**:
 - ✅ **Flexible Permission System:** Grants permission to break furniture with either the specific `ia.furniture.break` permission or the broader `ia.*` permission.
 - ✅ **Minigame Friendly:** Ideal for games like BedWars where WorldGuard can't be used.
 - ✅ **Lightweight & Optimized:**
-    - Minimal performance impact (~0.001ms per permission check)
-    - Leverages LuckPerms in-memory cache for instant permission lookups
-    - Zero database queries - all checks happen in RAM
-    - Perfect for high-player-count servers
+  - Minimal performance impact (~0.001ms per permission check)
+  - Leverages LuckPerms in-memory cache for instant permission lookups
+  - Zero database queries - all checks happen in RAM
+  - Perfect for high-player-count servers
 - 🔄 **Auto-Update Check:** On server start, the plugin checks for updates. If a new version is available, a notification is displayed in the console.
 
 ## 📥 Installation
@@ -59,9 +60,9 @@ WorldGuard works great for Survival servers, but on **minigame servers**:
 
 - **Minecraft Versions:** 1.16.5 to the latest release
 - **Server Software:**
-    - ✅ [Paper](https://papermc.io/) (1.16.5 and newer) - **Fully Supported**
-    - ❌ Folia - ItemsAdder does not support Folia at this time
-    - ❌ Spigot - Not supported
+  - ✅ [Paper](https://papermc.io/) (1.16.5 and newer) - **Fully Supported**
+  - ❌ Folia - ItemsAdder does not support Folia at this time
+  - ❌ Spigot - Not supported
 - **Required Plugins:** [ItemsAdder](https://www.spigotmc.org/resources/itemsadder.73355/)
 - ✅ **Works with all ItemsAdder furniture**
 - ✅ **Full ItemsAdder Compatibility:** Compatible with all versions of ItemsAdder.
@@ -71,10 +72,10 @@ WorldGuard works great for Survival servers, but on **minigame servers**:
 This plugin works seamlessly with popular minigame plugins:
 
 - ✅ **BedWars Plugins:**
-    - [BedWars1058](https://www.spigotmc.org/resources/bedwars1058.50942/)
-    - [Screaming BedWars](https://www.spigotmc.org/resources/screaming-bedwars-1-8-8-1-20-4.63714/)
-    - [MBedwars](https://polymart.org/resource/mbedwars.2739)
-    - Other BedWars forks and custom implementations
+  - [BedWars1058](https://www.spigotmc.org/resources/bedwars1058.50942/)
+  - [Screaming BedWars](https://www.spigotmc.org/resources/screaming-bedwars-1-8-8-1-20-4.63714/)
+  - [MBedwars](https://polymart.org/resource/mbedwars.2739)
+  - Other BedWars forks and custom implementations
 - ✅ **SkyWars Plugins:** Most SkyWars implementations
 - ✅ **BuildBattle, Murder Mystery, and other minigames**
 
@@ -85,6 +86,7 @@ This plugin works seamlessly with popular minigame plugins:
 - ✅ **No conflicts with minigame plugins** - uses permission-based protection instead of regions
 
 ## ℹ️ How it works
+
 The plugin listens for ItemsAdder furniture break interactions and cancels them unless the player has the proper permission. It does not replace WorldGuard — it’s a niche tool for arenas where regions are undesirable.
 
 ## 📦 Other Plugins
