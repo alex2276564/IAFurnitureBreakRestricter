@@ -69,48 +69,19 @@ be used to verify the integrity of the JAR.
 
 ### Binary artifacts in the repository
 
-<table>
-  <thead>
-    <tr>
-      <th>Artifact</th>
-      <th>Location</th>
-      <th>Reason it is committed</th>
-      <th>Risk mitigation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>gradle-wrapper.jar</code></td>
-      <td><code>gradle/wrapper/gradle-wrapper.jar</code></td>
-      <td>Standard Gradle wrapper distribution mechanism, recommended by Gradle documentation.</td>
-      <td>The wrapper is pinned via <code>distributionSha256Sum</code> in <code>gradle-wrapper.properties</code>; Gradle verifies the downloaded distribution ZIP against this hash.</td>
-    </tr>
-  </tbody>
-</table>
+- `gradle-wrapper.jar`
+  - **Location:** `gradle/wrapper/gradle-wrapper.jar`
+  - **Reason it is committed:** Standard Gradle wrapper distribution mechanism, recommended by Gradle documentation.
+  - **Risk mitigation:** The wrapper is pinned via `distributionSha256Sum` in `gradle-wrapper.properties`; Gradle verifies the downloaded distribution ZIP against this hash.
 
 ### Dependency locking
 
-<table>
-  <thead>
-    <tr>
-      <th>Scope</th>
-      <th>Status</th>
-      <th>Details</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Gradle dependencies</td>
-      <td><strong>Locked</strong></td>
-      <td><code>dependencyLocking { lockAllConfigurations() }</code> is enabled, so all configurations are locked and upgrades are explicit.</td>
-    </tr>
-    <tr>
-      <td>GitHub Actions</td>
-      <td><strong>Not SHA-pinned</strong></td>
-      <td>Actions are referenced by version tags instead of commit SHAs; risk is mitigated by runtime monitoring via Harden Runner (see “CI hardening”).</td>
-    </tr>
-  </tbody>
-</table>
+- Gradle dependencies
+  - **Status:** **Locked**
+  - **Details:** `dependencyLocking { lockAllConfigurations() }` is enabled, so all configurations are locked and upgrades are explicit.
+- GitHub Actions
+  - **Status:** **Not SHA-pinned**
+  - **Details:** Actions are referenced by version tags instead of commit SHAs; risk is mitigated by runtime monitoring via Harden Runner (see “CI hardening”).
 
 ---
 
