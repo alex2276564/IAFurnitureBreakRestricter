@@ -69,16 +69,16 @@ be used to verify the integrity of the JAR.
 
 ### Binary artifacts in the repository
 
-| Artifact             | Location                               | Reason it is committed                                                                 | Risk mitigation                                                                                             |
-|----------------------|----------------------------------------|----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| `gradle-wrapper.jar` | `gradle/wrapper/gradle-wrapper.jar`    | Standard Gradle wrapper distribution mechanism, recommended by Gradle documentation.   | The wrapper is pinned via `distributionSha256Sum` in `gradle-wrapper.properties`; Gradle verifies the downloaded distribution ZIP against this hash. |
+| Artifact             | Location                            | Reason it is committed                                                               | Risk mitigation                                                                                                                                                                                        |
+|----------------------|-------------------------------------|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `gradle-wrapper.jar` | `gradle/wrapper/gradle-wrapper.jar` | Standard Gradle wrapper distribution mechanism, recommended by Gradle documentation. | The wrapper is pinned via `distributionSha256Sum` in `gradle-wrapper.properties`; Gradle verifies the downloaded distribution ZIP against this hash.                                                   |
 
 ### Dependency locking
 
-| Scope              | Status      | Details                                                                                         |
-|--------------------|-------------|-------------------------------------------------------------------------------------------------|
-| Gradle dependencies | **Locked**  | `dependencyLocking { lockAllConfigurations() }` is enabled, so all configurations are locked and upgrades are explicit. |
-| GitHub Actions     | **Not SHA-pinned** | Actions are referenced by version tags instead of commit SHAs; risk is mitigated by runtime monitoring via Harden Runner (see “CI hardening”). |
+| Scope               | Status             | Details                                                                                                                                                                                    |
+|---------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Gradle dependencies | **Locked**         | `dependencyLocking { lockAllConfigurations() }` is enabled, so all configurations are locked and upgrades are explicit.                                                                    |
+| GitHub Actions      | **Not SHA-pinned** | Actions are referenced by version tags instead of commit SHAs; risk is mitigated by runtime monitoring via Harden Runner (see "CI hardening").                                            |
 
 ---
 
