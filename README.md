@@ -4,6 +4,7 @@
 [![Java Version](https://img.shields.io/badge/java-17+-orange)](https://adoptium.net/installation/linux/)
 [![GitHub Release](https://img.shields.io/github/v/release/alex2276564/IAFurnitureBreakRestricter?color=blue)](https://github.com/alex2276564/IAFurnitureBreakRestricter/releases/latest)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![SLSA 3](https://slsa.dev/images/gh-badge-level3.svg)](https://slsa.dev)
 
 **ItemsAdder Furniture Protection** is a lightweight addon for the ItemsAdder Minecraft plugin that restricts breaking of custom furniture items. It's specifically designed for **minigame servers** (especially BedWars, SkyWars, and similar games) where traditional protection plugins like WorldGuard cannot be effectively used without causing gameplay issues.
 
